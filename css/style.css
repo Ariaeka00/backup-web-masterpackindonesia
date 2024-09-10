@@ -26,7 +26,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
-  background-color: #fff;
+  background: linear-gradient(to right, rgb(77, 0, 77), rgb(255, 41, 76));
   box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
   position: fixed;
   top: 0;
@@ -442,6 +442,11 @@ footer .credit a {
     }
 
     .content {
+        flex-wrap: wrap;
+        padding: 4rem;
+    }
+
+    .content .hero-text {
         flex-direction: column;
         flex-wrap: wrap;
     }
@@ -483,6 +488,7 @@ footer .credit a {
 .contact .row form {
     padding-top: 0;
 } 
+
 }
 
 
@@ -491,6 +497,7 @@ footer .credit a {
 /* Mobile */
 @media (max-width: 450px) {
     html {
+        width: 100%;
         font-size: 55%;
     }
 }
