@@ -38,7 +38,7 @@ body {
 .navbar .navbar-logo {
     font-size: 2rem;
     font-weight: 700;
-    color: red;
+    color: #fff;
     font-style: italic;
     transition: .3s ease-in-out;
 }
@@ -48,14 +48,14 @@ body {
 }
 
 .navbar .navbar-nav a {
-    color: var(--dark);
+    color: #fff;
     display: inline-block;
     font-size: 1.3rem;
     margin: 0.8rem;
 }
 
 .navbar .navbar-nav a:hover {
-    color: red;
+    color: var(--dark);
 }
 
 .navbar .navbar-nav a::after {
@@ -84,12 +84,12 @@ body {
 }
 
 .navbar .navbar-extra a {
-    color: var(--dark);
+    color: #fff;
     margin: 0 0.5rem;
 }
 
 .navbar .navbar-extra a:hover {
-    color: red;
+    color: var(--dark);
 }
 
 #hamburger-menu {
@@ -123,7 +123,7 @@ body {
 }
 
 .content .hero-text .h1 {
-    color: #010101;
+    color: #fff;
     font-size: 2.5rem;
 }
 
@@ -175,7 +175,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* background-color: aqua; */
 }
 
 /* About Section */
@@ -438,7 +437,8 @@ footer .credit a {
 
     /* Hero Section */
     .hero {
-        margin-top: 150px;
+        margin-top: 50px;
+        padding-top: 70px;
     }
 
     .content {
@@ -493,11 +493,9 @@ footer .credit a {
 
 
 
-
 /* Mobile */
 @media (max-width: 450px) {
     html {
-        width: 100%;
         font-size: 55%;
     }
 }
