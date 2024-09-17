@@ -31,4 +31,35 @@ document.addEventListener('click', (e) => {
     }
 })
 
+// shopping cart
+const shoppingCartButton = document.getElementById('shopping-cart')
+const shoppingCart = document.querySelector('.shopping-cart')
+
+shoppingCartButton.addEventListener('click', (e) => {
+    shoppingCart.classList.toggle('active')
+    e.preventDefault()
+})
+
+// klik untuk menghilangkan shopping cart 
+document.addEventListener('click', (e) => {
+    if(!shoppingCartButton.contains(e.target) && !shoppingCart.contains(e.target)) {
+        shoppingCart.classList.remove('active')
+    }
+})
+
+// modal box detail item 
+const product1 = document.getElementById('product1')
+const modalDetail = document.querySelector('.modal')
+const close = document.querySelector('.close-icon')
+
+product1.addEventListener('click', (e) => {
+    modalDetail.classList.add('active')
+    e.preventDefault()
+})
+
+close.addEventListener('click', (e) => {
+    modalDetail.classList.remove('active')
+    e.preventDefault()
+})
+
 

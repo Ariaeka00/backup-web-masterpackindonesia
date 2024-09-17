@@ -143,6 +143,70 @@ body {
     color: #010101;
 }
 
+/* Shopping Cart */
+.shopping-cart {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    height: 100vh;
+    width: 35rem;
+    padding: 0 1.5rem;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+
+.shopping-cart .cart-item {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #666;
+    position: relative;
+}
+
+.shopping-cart img {
+    height: 6rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.shopping-cart h3 {
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem;
+}
+
+.shopping-cart .item-price {
+    font-size: 1.2rem;
+}
+
+.shopping-cart .remove-item {
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+
+.shopping-cart .remove-item:hover {
+    color: #ff0000;
+}
+
+.shopping-cart.active {
+    right: 0;
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;
@@ -347,7 +411,7 @@ body {
 
 /* Product */
 .product {
-    background-color: #1d2434;
+    background-color: #0a0d13;
     color: #fff;
 }
 
@@ -371,8 +435,8 @@ body {
 }
 
 .product .row .product-card .product-icons a {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     color: #fff;
     margin: 0.3rem;
     border: 1px solid #666;
@@ -398,7 +462,7 @@ body {
 }
 
 .product .row .product-card .product-img {
-    margin-top: 0.8rem;
+    margin-top: 0.5rem;
     padding: 1rem 0;
 }
 
@@ -418,6 +482,17 @@ body {
 
 .star {
     fill: red;
+}
+
+.product .product-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.product .product-price span {
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1rem;
 }
 
 /* Contact Section */
@@ -507,6 +582,85 @@ footer .credit a {
     color: #010101;
     font-weight: 700;
 }
+
+/* Modal Box */
+/* Item Detail */
+.modal {
+    display: flex;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+}
+
+.modal.active {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.modal-container {
+    position: relative;
+    background-color: #fefefe;
+    color: #010101;
+    margin: 15% auto;
+    padding: 1.2rem;
+    border: 1px solid #666;
+    width: 80%;
+}
+
+.modal-container .close-icon {
+    position: absolute;
+    right: 1rem;
+}
+
+.modal-content {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.modal-content img {
+    height: 20rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.modal-content p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    margin-top: 1.2rem;
+}
+
+.modal-content a {
+    display: flex;
+    gap: 1rem;
+    width: 12rem;
+    background-color: #ff0000;
+    color: #fff;
+    margin-top: 1rem;
+    padding: 1rem 1.6rem;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+
+.modal-content a:hover {
+    background-color: #b10202;
+}
+
 /* Media Queries */
 
 /* Laptop */
@@ -533,8 +687,15 @@ footer .credit a {
         background-position: center;
         background-size: cover;
     }
-}
 
+       /* Product */
+    .product .row .product-card .product-icons a {
+        width: 5rem;
+        height: 5rem;
+    }
+
+
+}
 
 /* Tablet */
 @media (max-width: 892px) {
