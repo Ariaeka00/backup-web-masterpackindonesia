@@ -47,19 +47,21 @@ document.addEventListener('click', (e) => {
     }
 })
 
-// modal box detail item 
-const product1 = document.getElementById('product1')
+const detail = document.querySelectorAll('.eye-btn')
 const modalDetail = document.querySelector('.modal')
-const close = document.querySelector('.close-icon')
 
-product1.addEventListener('click', (e) => {
-    modalDetail.classList.add('active')
-    e.preventDefault()
+detail.forEach(detail => {
+    detail.addEventListener("click", (e) => {
+        modalDetail.classList.add('active')
+        e.preventDefault()
+    })
 })
 
+const close = document.querySelector('.close-icon')
 close.addEventListener('click', (e) => {
     modalDetail.classList.remove('active')
     e.preventDefault()
 })
+
 
 

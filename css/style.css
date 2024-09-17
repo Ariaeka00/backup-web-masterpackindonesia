@@ -802,7 +802,12 @@ footer .credit a {
 
 .contact .row form {
     padding-top: 0;
-} 
+}
+
+/* Modal Detail */
+.modal-content {
+    flex-wrap: wrap;
+}
 
 }
 
