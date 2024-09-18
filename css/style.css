@@ -32,7 +32,7 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 99999;
+  z-index: 999;
 }
 
 .navbar .navbar-logo {
@@ -631,7 +631,7 @@ footer .credit a {
 }
 
 .modal-content img {
-    height: 20rem;
+    height: 19rem;
     margin-right: 2rem;
     margin-bottom: 2rem;
 }
