@@ -48,20 +48,27 @@ document.addEventListener('click', (e) => {
 })
 
 const detail = document.querySelectorAll('.eye-btn')
-const modalDetail = document.querySelector('.modal')
+const modalDetail = document.getElementById('item-detail-modal')
 
-detail.forEach(detail => {
-    detail.addEventListener("click", (e) => {
-        modalDetail.classList.add('active')
+detail.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+        modalDetail.style.display = 'flex'
         e.preventDefault()
     })
 })
 
+// close detail
 const close = document.querySelector('.close-icon')
 close.addEventListener('click', (e) => {
-    modalDetail.classList.remove('active')
+    modalDetail.style.display = 'none'
     e.preventDefault()
 })
 
+// klik diluar detail
+window.addEventListener('click', (e) => {
+    if(e.target == modalDetail) {
+        modalDetail.style.display = 'none'
+    }
+})
 
 
