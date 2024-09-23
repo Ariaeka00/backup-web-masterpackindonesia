@@ -277,7 +277,7 @@ body {
     background-color: #c70101;
 }
 
-.content .hero-text:nth-child(1) h1,
+/* .content .hero-text:nth-child(1) h1,
 .content .hero-text:nth-child(1) .h1,
 .content .hero-text:nth-child(1) h2,
 .content .hero-text:nth-child(1) p,
@@ -305,7 +305,7 @@ body {
         -webkit-filter: blur(0);
         opacity: 1;
 }
-}
+} */
 
 .content .hero-text:nth-child(1) h1 {
     animation-delay: .5s;
