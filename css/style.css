@@ -328,8 +328,7 @@ body {
 }
 
 .content .hero-logo {
-    /*background-color: black;
-    */width: 482px;
+    width: 482px;
     height: 600px;
     background-image: url('../img/MPI\ LOGO\ \(1\).png');
     background-repeat: no-repeat;
@@ -428,12 +427,32 @@ body {
     color: gray;
 }
 
-.about .row .content-about .socials a{
-    color: #fff;
+.about .row .content-about .socials {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 1.8rem;
+    /* background-color: red; */
 }
 
-.about .row .content-about .socials a:hover{
-    color: red;
+.about .row .content-about .socials a {
+    /* padding: 0 1rem; */
+}
+
+.about .row .content-about .socials a img{
+    width: 120px;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -ms-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+}
+
+.about .row .content-about .socials a img:hover{
+    filter: none;
+    -webkit-filter: none;
 }
 
 /* Menu Section */
@@ -889,6 +908,10 @@ footer .credit a {
 @media (max-width: 450px) {
     html {
         font-size: 55%;
+    }
+
+    .about .row .content-about .socials a {
+        padding-top: 1.8rem;
     }
 }
 
