@@ -273,38 +273,91 @@ body {
     -o-transition: .3s ease-in-out;
 }
 
+.content .hero-text:nth-child(1) h1,
+.content .hero-text:nth-child(1) .h1,
+.content .hero-text:nth-child(1) h2,
+.content .hero-text:nth-child(1) p,
+.content .hero-text:nth-child(1) .cta {
+    transform: translateX(-300px);
+    -webkit-transform: translateX(-300px);
+    -moz-transform: translateX(-300px);
+    -ms-transform: translateX(-300px);
+    -o-transform: translateX(-300px);
+    filter: blur(50px);
+    -webkit-filter: blur(50px);
+    opacity: 0;
+    animation: showDetail 1s 1s linear 1 forwards;
+    -webkit-animation: showDetail 1s 1s linear 1 forwards;
+}
+
+@keyframes showDetail {
+    to {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        filter: blur(0);
+        -webkit-filter: blur(0);
+        opacity: 1;
+}
+}
+
 .content .hero-text .cta:hover {
     background-color: #c70101;
 }
 
 .content .hero-text:nth-child(1) h1 {
-    animation-delay: .5s;
+    animation-delay: .6s;
 }
 
 .content .hero-text:nth-child(1) .h1 {
-    animation-delay: .7s;
+    animation-delay: .8s;
 }
 
 .content .hero-text:nth-child(1) h2 {
-    animation-delay: .9s;
+    animation-delay: 1s;
 }
 
 .content .hero-text:nth-child(1) p {
-    animation-delay: .11s;
+    animation-delay: 1.2s;
 }
 
 .content .hero-text:nth-child(1) a {
-    animation-delay: .13s;
+    animation-delay: 1.4s;
 }
 
 .content .hero-logo {
-    /* background-color: black; */
-    width: 482px;
+    /*background-color: black;
+    */width: 482px;
     height: 600px;
     background-image: url('../img/MPI\ LOGO\ \(1\).png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    transform: translateX(300px);
+    -webkit-transform: translateX(300px);
+    -moz-transform: translateX(300px);
+    -ms-transform: translateX(300px);
+    -o-transform: translateX(300px);
+    filter: blur(50px);
+    -webkit-filter: blur(50px);
+    opacity: 0;
+    animation: showImage 1s 1s linear 1 forwards;
+    -webkit-animation: showImage 1s 1s linear 1 forwards;
+}
+
+@keyframes showImage {
+    to {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        filter: blur(0);
+        -webkit-filter: blur(0);
+        opacity: 1;
+}
 }
 
 
