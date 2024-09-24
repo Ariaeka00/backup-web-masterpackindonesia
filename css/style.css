@@ -278,11 +278,11 @@ body {
 .content .hero-text:nth-child(1) h2,
 .content .hero-text:nth-child(1) p,
 .content .hero-text:nth-child(1) .cta {
-    transform: translateX(-300px);
-    -webkit-transform: translateX(-300px);
-    -moz-transform: translateX(-300px);
-    -ms-transform: translateX(-300px);
-    -o-transform: translateX(-300px);
+    transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
     filter: blur(50px);
     -webkit-filter: blur(50px);
     opacity: 0;
@@ -335,11 +335,11 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    transform: translateX(300px);
-    -webkit-transform: translateX(300px);
-    -moz-transform: translateX(300px);
-    -ms-transform: translateX(300px);
-    -o-transform: translateX(300px);
+    transform: translateX(100px);
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
     filter: blur(50px);
     -webkit-filter: blur(50px);
     opacity: 0;
