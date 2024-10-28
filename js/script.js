@@ -48,7 +48,7 @@ document.addEventListener('click', (e) => {
 })
 
 // modal detail
-const detail = document.querySelectorAll('.eye-btn')
+const detail = document.querySelectorAll('.btn-detail')
 const modalDetail = document.getElementById('item-detail-modal')
 
 detail.forEach((btn) => {

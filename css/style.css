@@ -369,7 +369,8 @@ body {
 .about, 
 .menu,
 .contact,
-.product{
+.product,
+.card{
     min-height: 100vh;
     padding: 8rem 7% 1.4rem;
 }
@@ -432,7 +433,6 @@ body {
     flex-wrap: wrap;
     align-items: end;
     gap: 1.8rem;
-    /* background-color: red; */
 }
 
 .about .row .content-about .socials a {
@@ -458,7 +458,8 @@ body {
 /* Menu Section */
 .menu h2, 
 .contact h2,
-.product h2{
+.product h2,
+.card{
     margin-bottom: 1rem;
 }
 
@@ -502,6 +503,10 @@ body {
     margin-top: 1rem auto 0.5rem;
 }
 
+/* card */
+.card {
+}
+
 /* Slider */
 .slider {
     min-height: 100vh;
@@ -521,8 +526,8 @@ body {
 
 /* Product */
 .product {
-    background-color: #0a0d13;
-    color: #fff;
+    /* background-color: #0a0d13; */
+    /* color: #fff; */
 }
 
 .product .row {
@@ -534,41 +539,8 @@ body {
 
 .product .row .product-card {
     text-align: center;
-    border: 1px solid #666;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, .5);
     padding: 2rem;
-}
-
-.product .row  .product-card .product-icons {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-}
-
-.product .row .product-card .product-icons a {
-    width: 3rem;
-    height: 3rem;
-    color: #fff;
-    margin: 0.3rem;
-    border: 1px solid #666;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: .3s ease-in-out;
-    -webkit-transition: .3s ease-in-out;
-    -moz-transition: .3s ease-in-out;
-    -ms-transition: .3s ease-in-out;
-    -o-transition: .3s ease-in-out;
-}
-
-.product .row .product-card .product-icons a:hover {
-    background-color: #010101;
-    color: #fff;
-    border: 1px solid #fff;
 }
 
 .product .row .product-card .product-img {
@@ -581,7 +553,7 @@ body {
 }
 
 .product .row .product-card .product-content h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .product .product-stars {
@@ -603,6 +575,28 @@ body {
     text-decoration: line-through;
     font-weight: lighter;
     font-size: 1rem;
+}
+
+.btn-detail {
+    width: 20rem;
+    height: 3rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    background-color: red;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    color: #eaeaea;
+    cursor: pointer;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.btn-detail:hover {
+    background-color: rgb(214, 1, 1);
+
 }
 
 /* Contact Section */
@@ -670,7 +664,7 @@ body {
 footer {
     background-color: red;
     text-align: center;
-    padding: 1rem 0 3rem;
+    padding: 10rem 0 3rem;
     margin-top: 3rem;
 }
 
