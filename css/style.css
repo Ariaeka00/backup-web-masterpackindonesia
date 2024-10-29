@@ -330,7 +330,7 @@ body {
 .content .hero-logo {
     width: 482px;
     height: 600px;
-    background-image: url('../img/MPI\ LOGO\ \(1\).png');
+    background-image: url('../img/mpi\ logo.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -662,43 +662,130 @@ body {
 
 /* Footer */
 footer {
-    background-color: red;
+    background-color: rgb(226, 226, 226);
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+
+.footer-container {
+    /* background-color: white; */
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.footer-wrapper {
+    /* background-color: slategrey; */
+    display: flex;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.description {
+    /* background-color: rgb(64, 80, 95); */
+    width: 35.33333%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 3rem;
+    font-weight: 500;
+}
+
+.description h2 {
+    color: #ff0000;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.description P {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.tautan {
+    margin-left: 1rem;
+    width: 27.33333%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 3rem;
+    font-weight: 500;
+}
+
+.tautan h3,
+.footer-contact {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.tautan ul li {
+    list-style-type: none;
+    margin-bottom: 0.5rem;
+}
+
+.tautan ul li a {
+    color: grey;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+
+.tautan ul li a:hover {
+    color: #ff0000;
+}
+
+.line {
+    width: 100%;
+    padding-top: 2.5rem;
+    border-top: 1px solid rgb(51 65 85);
+}
+
+.credit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.credit a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-right: 0.75rem;
+    border: 1px solid rgb(203 213 225);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+
+.credit a:hover {
+    background-color: #ff0000;
+}
+
+
+
+.footer-p {
     text-align: center;
-    padding: 10rem 0 3rem;
-    margin-top: 3rem;
 }
 
-footer .socials {
-    padding: 1rem;
-}
-
-footer .socials a {
-    color: #fff;
-    margin: 1rem;
-}
-
-footer .socials a:hover,
-footer .links a:hover {
-    color: #010101;
-}
-
-footer .links {
-    margin-bottom: 1.4rem;
-}
-
-footer .links a {
-    color: #fff;
-    padding: 0.7rem 1rem;
-}
-
-footer .credit {
-    font-size: 0.8rem;
-    color: #fff;
-}
-
-footer .credit a {
-    color: #010101;
-    font-weight: 700;
+.credit p a {
+    color: #ff0000;
 }
 
 /* Modal Box */
@@ -800,7 +887,7 @@ footer .credit a {
         /* background-color: black; */
         width: 482px;
         height: 482px;
-        background-image: url('../img/MPI\ LOGO\ \(1\).png');
+        background-image: url('../img/mpi\ logo.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
