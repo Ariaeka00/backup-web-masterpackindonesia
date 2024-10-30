@@ -435,10 +435,6 @@ body {
     gap: 1.8rem;
 }
 
-.about .row .content-about .socials a {
-    /* padding: 0 1rem; */
-}
-
 .about .row .content-about .socials a img{
     width: 120px;
     filter: grayscale(1);
@@ -504,8 +500,6 @@ body {
 }
 
 /* card */
-.card {
-}
 
 /* Slider */
 .slider {
@@ -541,6 +535,11 @@ body {
     text-align: center;
     box-shadow: 1px 1px 7px rgba(0, 0, 0, .5);
     padding: 2rem;
+    border-radius: .75rem;
+    -webkit-border-radius: .75rem;
+    -moz-border-radius: .75rem;
+    -ms-border-radius: .75rem;
+    -o-border-radius: .75rem;
 }
 
 .product .row .product-card .product-img {
@@ -572,9 +571,10 @@ body {
 }
 
 .product .product-price span {
-    text-decoration: line-through;
+    /* text-decoration: line-through; */
     font-weight: lighter;
     font-size: 1rem;
+    color: #010101;
 }
 
 .btn-detail {
@@ -663,7 +663,7 @@ body {
 /* Footer */
 footer {
     background-color: rgb(226, 226, 226);
-    padding-top: 6rem;
+    padding-top: 2rem;
     padding-bottom: 3rem;
 }
 
@@ -676,15 +676,12 @@ footer {
 }
 
 .footer-wrapper {
-    /* background-color: slategrey; */
     display: flex;
-    /* justify-content: space-around; */
     flex-wrap: wrap;
     margin: 0 auto;
 }
 
 .description {
-    /* background-color: rgb(64, 80, 95); */
     width: 35.33333%;
     padding-right: 1rem;
     padding-left: 1rem;
@@ -717,7 +714,7 @@ footer {
 }
 
 .tautan h3,
-.footer-contact {
+.footer-contact h3 {
     font-weight: bold;
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -739,6 +736,43 @@ footer {
 
 .tautan ul li a:hover {
     color: #ff0000;
+}
+
+.footer-contact {
+    margin-left: 1rem;
+    width: 34.3333%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 3rem;
+    font-weight: 500;
+}
+
+.description-contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+.description-contact a {
+    font-size: 1rem;
+    text-align: justify;
+    color: #010101;
+    font-weight: 400;
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
+
+.description-contact a:hover {
+    color: #ff0000;
+}
+
+.icon-footer {
+    margin-right: .5rem;
 }
 
 .line {
@@ -782,12 +816,12 @@ footer {
 
 .footer-p {
     text-align: center;
+    font-size: small;
 }
 
-.credit p a {
+.footer-p a {
     color: #ff0000;
 }
-
 /* Modal Box */
 /* Item Detail */
 .modal {
@@ -1017,6 +1051,31 @@ footer {
 .slider {
     min-height: 50vh;
 }
+
+.description,
+.tautan,
+.footer-contact {
+    width: 100%;
+}
+
+.description h2 {
+    font-size: 3rem;
+}
+
+.description p {
+    font-size: 1.5rem;
+}
+
+.tautan h3, 
+.footer-contact h3 {
+    font-size: 2rem;
+}
+
+.tautan a,
+.footer-contact a {
+    font-size: medium;
+}
+
 
 }
 
