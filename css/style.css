@@ -210,15 +210,16 @@ body {
 /* Hero Section */
 .hero {
     min-height: 100vh;
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
+    position: relative;
 }
 
 .content-large {
     min-width: 100%;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .bg-right {
@@ -233,7 +234,7 @@ body {
     width: 100rem;
     height: 50rem;
     background-color: white;
-    position: relative;
+    position: absolute;
     left: -40rem;
     transform: rotate(65deg);
     -webkit-transform: rotate(65deg);
@@ -243,17 +244,18 @@ body {
 }
 
 .content-large .logo-left {
-    position: relative;
-    z-index: 999;
-    left: -17rem;
-    /* background-color: #010101; */
+    width: 40%;
+    position: absolute;
+    left: -1rem;
+    top: 4rem;
+    /* background-color: red; */
 }
 
 .hero-text-large {
-    width: 600px;
-    position: relative;
-    z-index: 9999;
-    top: -10rem;
+    width: 31%;
+    position: absolute;
+    top: 9rem;
+    right: 15rem;
     /* background-color: red; */
 }
 
@@ -308,48 +310,39 @@ body {
 }
 
 .wrapping-img {
-    width: 40rem;
-    height: 40rem;
+    width: 50%;
+    height: 50%;
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 1rem;
     /* background-color: red; */
 }
 
 .img-hero-brown{
-   position: relative;
-    bottom: -29em;
-    right: -11em;
-    z-index: 99;
+    position: absolute;
+    top: 17rem;
+    right: 12rem;
+    z-index: 1;
 }
 
 .img-hero-white {
-    position: relative;
-    bottom: -26em;
-    right: -6em;
+    position: absolute;
+    top: 15rem;
+    right: -1rem;
 }
 
-.dot {
-    position: relative;
-    /* bottom: -10rem;
-    right: 40rem; */
-    transform: rotate(270deg);
-    -webkit-transform: rotate(270deg);
-    -moz-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    -o-transform: rotate(270deg);
-}
-
-.dot1 {
+/* .dot1 {
     position: absolute;
     top: 10rem;
-    left: 45rem;
-}
+    left: 40rem; */
+    /* background-color: #c70101; */
+/* } */
 
 .dot2 {
     position: absolute;
     bottom: 20rem;
     right: 5rem;
+    /* background-color: red; */
 }
 
 .content {
@@ -924,6 +917,50 @@ footer {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+    }
+
+    /* hero section */
+    .bg-left {
+        width: 90rem;
+        height: 43rem;
+        background-color: white;
+        position: absolute;
+        left: -35rem;
+        bottom: 14rem;
+        transform: rotate(73deg);
+        -webkit-transform: rotate(73deg);
+        -moz-transform: rotate(73deg);
+        -ms-transform: rotate(73deg);
+        -o-transform: rotate(73deg);
+    }
+
+    .content-large .logo-left {
+        width: 50%;
+        position: absolute;
+        top: 10rem;
+        /* left: -1rem; */
+        /* background-color: red; */
+    }
+
+    .dot2 {
+        position: absolute;
+        bottom: 30rem;
+        right: 5rem;
+    }
+
+    .img-hero-brown{
+        width: 240px;
+        position: relative;
+        top: 24rem;
+        left: 20rem;
+        z-index: 1;
+    }
+    
+    .img-hero-white {
+        width: 240px;
+        position: relative;
+        top: 22rem;
+        left: 13rem;
     }
 
        /* Product */
