@@ -209,6 +209,7 @@ body {
 
 /* Hero Section */
 .hero {
+    min-width: 100%;
     min-height: 100vh;
     /* display: flex; */
     /* align-items: center; */
@@ -228,19 +229,22 @@ body {
     background-color: #010101;
     opacity: .9;
     position: absolute;
+    display: flex;
+    /* filter: blur(.3);
+    -webkit-filter: blur(.3); */
 }
 
 .bg-left {
     width: 100rem;
     height: 50rem;
     background-color: white;
-    position: absolute;
+    position: relative;
     left: -40rem;
-    transform: rotate(65deg);
-    -webkit-transform: rotate(65deg);
-    -moz-transform: rotate(65deg);
-    -ms-transform: rotate(65deg);
-    -o-transform: rotate(65deg);
+    transform: rotate(73deg);
+    -webkit-transform: rotate(73deg);
+    -moz-transform: rotate(73deg);
+    -ms-transform: rotate(73deg);
+    -o-transform: rotate(73deg);
 }
 
 .content-large .logo-left {
@@ -331,12 +335,11 @@ body {
     right: -1rem;
 }
 
-/* .dot1 {
+.dot1 {
     position: absolute;
+    left: 43rem;
     top: 10rem;
-    left: 40rem; */
-    /* background-color: #c70101; */
-/* } */
+}
 
 .dot2 {
     position: absolute;
@@ -588,7 +591,6 @@ body {
 
 .btn-detail:hover {
     background-color: rgb(214, 1, 1);
-
 }
 
 /* Contact Section */
@@ -949,18 +951,18 @@ footer {
     }
 
     .img-hero-brown{
-        width: 240px;
+        width: 160px;
         position: relative;
-        top: 24rem;
-        left: 20rem;
+        top: 29rem;
+        left: 15rem;
         z-index: 1;
     }
     
     .img-hero-white {
-        width: 240px;
+        width: 160px;
         position: relative;
-        top: 22rem;
-        left: 13rem;
+        top: 27rem;
+        left: 10rem;
     }
 
        /* Product */
@@ -968,8 +970,6 @@ footer {
         width: 5rem;
         height: 5rem;
     }
-
-
 }
 
 /* Tablet */
