@@ -249,10 +249,32 @@ body {
 
 .content-large .logo-left {
     width: 40%;
-    position: absolute;
+    position: relative;
     left: -1rem;
     top: 4rem;
-    /* background-color: red; */
+    transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    -moz-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+    -o-transform: translateX(-100px);
+    filter: blur(50px);
+    -webkit-filter: blur(50px);
+    opacity: 0;
+    animation: showImageLarge 1s 1s linear 1 forwards;
+    -webkit-animation: showImageLarge 1s 1s linear 1 forwards;
+}
+
+@keyframes showImageLarge {
+    to {
+        transform: translate(0);
+        -webkit-transform: translate(0);
+        -moz-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+        filter: blur(0);
+        -webkit-filter: blur(0);
+        opacity: 1;
+}
 }
 
 .hero-text-large {
@@ -313,29 +335,102 @@ body {
     background-color: #c70101;
 }
 
-.wrapping-img {
-    width: 50%;
-    height: 50%;
-    position: absolute;
-    bottom: 0;
-    right: 1rem;
-    /* background-color: red; */
+.content-large .hero-text-large h1,
+.content-large .hero-text-large h2,
+.content-large .hero-text-large h2 span,
+.content-large .hero-text-large p,
+.content-large .hero-text-large .cta,
+.content-large .dot2 {
+    transform: translatex(100px);
+    -webkit-transform: translatex(100px);
+    -moz-transform: translatex(100px);
+    -ms-transform: translatex(100px);
+    -o-transform: translatex(100px);
+    filter: blur(50px);
+    -webkit-filter: blur(50px);
+    opacity: 0;
+    animation: showDetailLarge 1s 1s linear 1 forwards;
+    -webkit-animation: showDetailLarge 1s 1s linear 1 forwards;
+}
+
+@keyframes showDetailLarge {
+    to {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        filter: blur(0);
+        -webkit-filter: blur(0);
+        opacity: 1;
+}
+}
+
+.content-large .hero-text-large h1 {
+    animation-delay: .6s;
+}
+
+.content-large .hero-text-large .h1 {
+    animation-delay: 1s;
+}
+
+.content-large .hero-text-large h2 {
+    animation-delay: 1.4s;
+}
+
+.content-larga .hero-text-large p {
+    animation-delay: 1.8s;
+}
+
+.content-large .hero-text-large a {
+    animation-delay: 2.2s;
 }
 
 .img-hero-brown{
+    width: 18%;
     position: absolute;
-    top: 17rem;
+    bottom: -7rem;
     right: 12rem;
     z-index: 1;
 }
 
 .img-hero-white {
+    width: 18%;
     position: absolute;
-    top: 15rem;
-    right: -1rem;
+    bottom: -5rem;
+    right: 0;
+    /* right: -13rem; */
+}
+
+.content-large .img-hero-brown,
+.content-large .img-hero-white {
+    transform: translateY(100px);
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    -o-transform: translateY(100px);
+    filter: blur(50px);
+    -webkit-filter: blur(50px);
+    opacity: 0;
+    animation: showBrown 1s 1s linear 1 forwards;
+    -webkit-animation: showBrown 1s 1s linear 1 forwards;
+}
+
+@keyframes showBrown {
+    to {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        filter: blur(0);
+        -webkit-filter: blur(0);
+        opacity: 1;
+}
 }
 
 .dot1 {
+    /* width: 10%; */
     position: absolute;
     left: 43rem;
     top: 10rem;
@@ -535,6 +630,29 @@ body {
     -moz-border-radius: .75rem;
     -ms-border-radius: .75rem;
     -o-border-radius: .75rem;
+    transform: translateY(300px);
+    -webkit-transform: translateY(300px);
+    -moz-transform: translateY(300px);
+    -ms-transform: translateY(300px);
+    -o-transform: translateY(300px);
+    filter: blur(50px);
+    -webkit-filter: blur(50px);
+    opacity: 0;
+    animation: showProduct 1s 1s linear 1 forwards;
+    -webkit-animation: showProduct 1s 1s linear 1 forwards;
+}
+
+@keyframes showProduct {
+    to {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        filter: blur(0);
+        -webkit-filter: blur(0);
+        opacity: 1;
+}
 }
 
 .product .row .product-card .product-img {
@@ -936,6 +1054,58 @@ footer {
         -o-transform: rotate(73deg);
     }
 
+    .hero-text-large {
+        width: 35%;
+        top: 15rem;
+        right: 10rem;
+    }
+
+    .content-large .hero-text-large h1 {
+        font-size: 2rem;
+        color: white;
+    }
+    
+    .content-large .hero-text-large .h1 {
+        color: #ff0000;
+        font-size: 2.5rem;
+    }
+    
+    .content-large .hero-text-large h2 {
+        color: slategray;
+    }
+    
+    .content-large .hero-text-large h2 span {
+        color: red;
+    }
+    
+    .content-large .hero-text-large p {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        line-height: 1.4;
+        font-weight: 300;
+        color: white;
+    }
+    
+    .content-large .hero-text-large .cta {
+        margin-top: 1rem;
+        display: inline-block;
+        padding: 1rem 3rem;
+        font-size: 1.4rem;
+        color: #fff;
+        background-color: red;
+        border-radius: 0.5rem;
+        -webkit-border-radius: 0.5rem;
+        -moz-border-radius: 0.5rem;
+        -ms-border-radius: 0.5rem;
+        -o-border-radius: 0.5rem;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+        transition: .3s ease-in-out;
+        -webkit-transition: .3s ease-in-out;
+        -moz-transition: .3s ease-in-out;
+        -ms-transition: .3s ease-in-out;
+        -o-transition: .3s ease-in-out;
+    }
+
     .content-large .logo-left {
         width: 50%;
         position: absolute;
@@ -946,23 +1116,20 @@ footer {
 
     .dot2 {
         position: absolute;
-        bottom: 30rem;
+        bottom: 24rem;
         right: 5rem;
     }
 
     .img-hero-brown{
-        width: 160px;
-        position: relative;
-        top: 29rem;
-        left: 15rem;
+        bottom: -8rem;
+        right: 12rem;
         z-index: 1;
     }
     
     .img-hero-white {
-        width: 160px;
-        position: relative;
-        top: 27rem;
-        left: 10rem;
+        /* top: 27rem; */
+        bottom: -6rem;
+        right: 0;
     }
 
        /* Product */
