@@ -1182,6 +1182,11 @@ footer {
         right: 1rem;
     }
 
+    .navbar .navbar-extra a {
+        color: #010101;
+        margin: 0 0.5rem;
+    }
+
     /* Hero Section */
     .hero {
         margin-top: 50px;
@@ -1304,8 +1309,9 @@ footer {
     }
     
     .content .hero-logo {
-        width: 482px;
-        height: 600px;
+        width: 50rem;
+        height: 60rem;
+        /* background-color: black; */
         background-image: url('../img/mpi\ logo.png');
         background-repeat: no-repeat;
         background-position: center;
