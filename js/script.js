@@ -31,6 +31,12 @@ document.addEventListener('click', (e) => {
     }
 })
 
+document.addEventListener('scroll', (e) => {
+    if(!search.contains(e.target) && !searchForm.contains(e.target)) {
+        searchForm.classList.remove('active')
+    }
+})
+
 // shopping cart
 const shoppingCartButton = document.getElementById('shopping-cart')
 const shoppingCart = document.querySelector('.shopping-cart')
