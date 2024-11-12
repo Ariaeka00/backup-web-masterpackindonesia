@@ -393,24 +393,7 @@ body {
     width: 30%;
 }
 
-/* .img-hero-brown{
-    width: 18%;
-    position: absolute;
-    bottom: -7rem;
-    right: 12rem;
-    z-index: 1;
-}
-
-.img-hero-white {
-    width: 18%;
-    position: absolute;
-    bottom: -5rem;
-    right: 0;
-    /* right: -13rem; */
-/* } */ */
-
-.content-large .img-hero-brown,
-.content-large .img-hero-white {
+.wrapping-img {
     transform: translateY(100px);
     -webkit-transform: translateY(100px);
     -moz-transform: translateY(100px);
