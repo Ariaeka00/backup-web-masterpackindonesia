@@ -18,12 +18,13 @@ html {
 
 body {
   font-family: 'Poppins';
+  background-color: #ddd;
 }
 
 /* navbar */
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 1.4rem 7%;
   background-color: transparent;
@@ -36,7 +37,7 @@ body {
 }
 
 .navbar .navbar-logo {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 700;
     color: #ff0000;
     font-style: italic;
@@ -48,7 +49,7 @@ body {
 }
 
 .navbar .navbar-nav a {
-    color: white;
+    color: #010101;
     display: inline-block;
     font-size: 1.3rem;
     margin: 0.8rem;
@@ -84,7 +85,7 @@ body {
 }
 
 .navbar .navbar-extra a {
-    color: white;
+    color: #010101;
     margin: 0 0.5rem;
 }
 
@@ -207,17 +208,143 @@ body {
     right: 0;
 }
 
-/* Hero Section */
-.content {
-    display: none;
+.shopping-button {
+    position: absolute;
+    left: 0;
+    bottom: 7rem;
+    width: 100%;
+    height: 4rem;
+    background-color: #ff0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 4rem;
+    -webkit-border-radius: 4rem;
+    -moz-border-radius: 4rem;
+    -ms-border-radius: 4rem;
+    -o-border-radius: 4rem;
 }
 
+/* Hero Section */
 .hero {
-    min-width: 100%;
-    min-height: 100vh;
+    display: grid;
+    gap: 5px;
+    /* background-color: #000; */
+    margin-top: 6rem;
+}
+
+/* nav menu */
+.nav-menu {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    font-family: 'poppins';
+    order: -1;
+    padding: 0 2rem;
+}
+
+.nav-menu .navbar-nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    list-style: none;
+    gap: 5px;
+}
+
+.nav-menu .navbar-nav a {
+    display: block;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+    color: #010101;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 0.9;
+}
+
+.nav-menu .brand {
+    font-size: .5rem;
+    color: #333;
+    font-style: italic;
+}
+
+.content-hero-large {
+    display: grid;
+    grid-template-areas: 
+        'container-heading container-heading feature-1'
+        'container-heading container-heading feature-2';   
+    padding: 0 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.container-heading {
+    grid-area: container-heading;
+    min-height: 20rem;
+    padding: 50px;
+    background-image: url('../img/U\ Banner\ Bandung-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.container-heading p{
+    visibility: hidden;
+}
+
+.features {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    background-color: #000;
+    color: #eaeaea;
+    cursor: pointer;
+    font-family: 'oswald';
+}
+
+.feature-1 {
+    grid-area: feature-1;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/postMocup1.png');
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s ease;
+    -webkit-transition: transform 0.5s ease;
+    -moz-transition: transform 0.5s ease;
+    -ms-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+}
+
+.feature-1:hover::before {
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+}
+
+/* .content {
+    display: none;
+} */
+
+.hero {
+    /* min-width: 100%; */
+    /* min-height: 100vh; */
     /* display: flex; */
     /* align-items: center; */
-    position: relative;
+    /* position: relative; */
 }
 
 .content-large {
