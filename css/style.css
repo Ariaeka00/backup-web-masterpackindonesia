@@ -48,6 +48,10 @@ body {
     color: #850000;
 }
 
+.navbar-extra {
+    display: flex;
+}
+
 .navbar .navbar-nav a {
     color: #010101;
     display: inline-block;
@@ -84,6 +88,19 @@ body {
     -o-transform: scaleX(0.5);
 }
 
+.wrapping-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30rem;
+    border: 1px solid red;
+}
+
+.wrapping-search input {
+    width: 100%;
+    background-color: transparent;
+}
+
 .navbar .navbar-extra a {
     color: #010101;
     margin: 0 0.5rem;
@@ -95,6 +112,12 @@ body {
 
 #hamburger-menu {
     display: none;
+}
+
+.register {
+    display: flex;
+    margin-left: 2rem;
+    gap: 1rem;
 }
 
 /* Navbar Search Form */
