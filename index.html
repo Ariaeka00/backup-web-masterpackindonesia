@@ -12,6 +12,7 @@
     <meta name="copyright" content="copyright 2024 masterpackindonesia">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Master Pack Indonesia</title>
+    <link rel="icon" sizes="32x32" href="img/MPI LOGO.png" type="image/png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +32,12 @@
 <body>
     <!-- Navbar Start -->
     <nav class="navbar">
-        <a href="#rumah" class="navbar-logo">Master Pack Indonesia</a>
+        <div class="nav-info">
+            <a href="#rumah" class="navbar-logo">Master Pack Indonesia</a>
+            <div class="home" id="home"><i data-feather="shopping-bag"></i>Beranda</div>
+            <div>Cek Transaksi</div>
+            <div>Tes</div>
+        </div>
 
         <div class="navbar-extra">
             <div class="wrapping-search">
@@ -42,8 +48,8 @@
             <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
 
             <div class="register">
-                <div>Masuk</div>
-                <div>Daftar</div>
+                <div id="sign-in" class="sign-in">Sign in</div>
+                <div id="sign-up" class="sign-up">Sign up</div>
             </div>
         </div>
 
@@ -91,23 +97,6 @@
 
     <!-- Hero Section Start -->
     <section class="hero" id="hero">
-                <!-- Nav Menu Start -->
-                <!-- <div class="nav-menu">
-                    <div class="brand">
-                        <h1>Master Pack Indonesia</h1>
-                    </div>
-                    
-                    <div class="navbar-nav">
-                        <a href="#rumah">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#menu">Categories</a>
-                        <a href="#product">Product</a>
-                        <a href="#contact">Contact</a>
-                    </div>
-                </div> -->
-        
-                <!-- Nav Menu End -->
-
         <main class="content-hero-large">
             <div class="container-heading">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, delectus.</p>
@@ -123,44 +112,6 @@
         </main>
     </section>
 
-
-
-
-
-    <!-- <section class="hero" id="rumah">
-        <main class="content-large">
-            <div class="bg-right">
-                <div class="bg-left"></div>
-            </div>
-            <img src="img/campuran1.png" alt="" class="logo-left">
-            
-            <img src="img/Asset 5.png" alt="" class="dot2">
-            
-            <div class="hero-text-large">
-                <h1>Hallo semua 👋, Selamat datang di</h1>
-                <h1 class="h1">Master Pack Indonesia</h1>
-                <h2 class="h2">Berkualitas | <span>Terpercaya</span></h2>
-                <p>Ingin mencari lakban untuk packing yang kuat dan Berkualitas? di Master Pack Indonesia aja!</p>
-                <a href="https://wa.me/+6281288899799" target="_blank" class="cta">Beli Sekarang</a>
-            </div>
-            
-            <div class="wrapping-img">
-                <img src="img/lakban 48ck.png" alt="">
-            </div>
-        </main>
-
-        <main class="content">
-            <div class="hero-text">
-                <h1>Hallo semua 👋, Selamat datang di</h1>
-                <h1 class="h1">Master Pack Indonesia</h1>
-                <h2 class="h2">Berkualitas | <span>Terpercaya</span></h2>
-                <p>Ingin mencari lakban untuk packing yang kuat dan Berkualitas? di Master Pack Indonesia aja!</p>
-                <a href="https://wa.me/+6281288899799" target="_blank" class="cta">Beli Sekarang</a>
-            </div>
-
-            <div class="hero-logo"></div>
-        </main>
-    </section> -->
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
@@ -219,6 +170,7 @@
             mengemas dan memperbaiki barang packingan anda!</p>
 
         <div class="row">
+            <!-- Produk 1 -->
             <div class="product-card">
                 <div class="product-img">
                     <img src="img/product/eco.jpg" alt="">
@@ -233,10 +185,11 @@
                     <i data-feather="star" class="star"></i>
                     <i data-feather="star" class="star"></i>
                 </div>
-                <div class="product-price">Rp.3.900 - Rp.5.000 <span>Rp.5.500</span></div>
-
-                <div class="btn-detail">Detail Product</div>
+                <div class="product-price">Rp.4.000 - Rp.5.000 <span>/PCS</span></div>
+                <div class="btn-detail" data-modal="1">Detail Product</div>
             </div>
+
+            <!-- produk 2 -->
             <div class="product-card">
                 <div class="product-img">
                     <img src="img/product/45 mm-01.jpg" alt="">
@@ -252,9 +205,10 @@
                     <i data-feather="star" class="star"></i>
                 </div>
                 <div class="product-price">Rp.396.000<span>/DUS</span></div>
-
-                <div class="btn-detail">Detail Product</div>
+                <div class="btn-detail" data-modal="2">Detail Product</div>
             </div>
+
+            <!-- produk 3 -->
             <div class="product-card">
                 <div class="product-img">
                     <img src="img/product/thermal roll.jpg" alt="">
@@ -270,9 +224,10 @@
                     <i data-feather="star" class="star"></i>
                 </div>
                 <div class="product-price">Rp.924.000 / RP.770.000<span>/DUS</span></div>
-
-                <div class="btn-detail">Details Product</div>
+                <div class="btn-detail" data-modal="3">Details Product</div>
             </div>
+
+            <!-- produk 4 -->
             <div class="product-card">
                 <div class="product-img">
                     <img src="img/product/Untitled-3-01.jpg" alt="">
@@ -289,8 +244,10 @@
                 </div>
                 <div class="product-price">Rp.7.000 - RP.6.700<span>/PCS</span></div>
 
-                <div class="btn-detail">Detail Product</div>
+                <div class="btn-detail" data-modal="4">Detail Product</div>
             </div>
+
+            <!-- produk 5 -->
             <div class="product-card">
                 <div class="product-img">
                     <img src="img/product/Isolasi konten 24mm.jpg" alt="">
@@ -306,9 +263,10 @@
                     <i data-feather="star" class="star"></i>
                 </div>
                 <div class="product-price">Rp.360.000<span>/DUS</span></div>
-
-                <div class="btn-detail">Detail Product</div>
+                <div class="btn-detail" data-modal="5">Detail Product</div>
             </div>
+
+            <!-- produk 6 -->
             <div class="product-card">
                 <div class="product-img">
                     <img src="img/product/Bubble wrap konten.jpg" alt="">
@@ -324,10 +282,8 @@
                     <i data-feather="star" class="star"></i>
                 </div>
                 <div class="product-price">Rp.80.000 - Rp.95.000<span>/ROLL</span></div>
-
-                <div class="btn-detail">Detail Product</div>
+                <div class="btn-detail" data-modal="6">Detail Product</div>
             </div>
-
         </div>
     </Section>
     <!-- Product Section End -->
@@ -431,6 +387,108 @@
     <!-- Footer End -->
 
     <!-- Modal Box Item Detail Start -->
+    <div class="modal" id="item-detail-modal1">
+        <div class="modal-container">
+            <a href="#" class="close-icon"><i data-feather="x"></i></a>
+            <div class="modal-content">
+                <img src="img/product/eco.jpg" alt="">
+                <div class="product-content">
+                    <h3>LAKBAN MPI 45MM X 100 YARD X 42 MIC (ISI 72 ROLL/DUS)</h3>
+                    <p>BRAND MASTER PACK INDONESIA ECO
+                        LEBAR 45 MM 2"
+                        PANJANG 100 YARD
+                        42 Micron
+                        KUALITAS BAGUS DAN TIDAK MUDAH PUTUS, COCOK UNTUK KEBUTUHAN PACKING KALIAN!</p>
+                    <!-- <div class="product-stars"></div>
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star" class="star"></i>
+                    <div class="product-price">Rp.3.900 - Rp.5.000</div>
+                    <a href="https://shopee.co.id/Lakban-Bening-Lakban-Cokelat-MPI-Ekomonis-45mm-x-100-Yard-i.261781936.14692872751"
+                        target="_blank"><i data-feather="shopping-cart"></i><span>add to cart</span></a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="item-detail-modal2">
+        <div class="modal-container">
+            <a href="#" class="close-icon"><i data-feather="x"></i></a>
+            <div class="modal-content">
+                <img src="img/Lakban 48 ck original bening.png" alt="">
+                <div class="product-content">
+                    <h3>LAKBAN MPI 100 YARD - BENING ECO</h3>
+                    <p>BRAND MASTER PACK INDONESIA ECO
+                        LEBAR 45 MM 2"
+                        PANJANG 100 YARD
+                        42 Micron
+                        KUALITAS BAGUS DAN TIDAK MUDAH PUTUS, COCOK UNTUK KEBUTUHAN PACKING KALIAN!</p>
+                    <div class="product-stars"></div>
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star" class="star"></i>
+                    <div class="product-price">Rp.3.900 - Rp.5.000</div>
+                    <a href="https://shopee.co.id/Lakban-Bening-Lakban-Cokelat-MPI-Ekomonis-45mm-x-100-Yard-i.261781936.14692872751"
+                        target="_blank"><i data-feather="shopping-cart"></i><span>add to cart</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="item-detail-modal">
+        <div class="modal-container">
+            <a href="#" class="close-icon"><i data-feather="x"></i></a>
+            <div class="modal-content">
+                <img src="img/product/eco.jpg" alt="">
+                <div class="product-content">
+                    <h3>LAKBAN MPI 100 YARD - BENING ECO</h3>
+                    <p>BRAND MASTER PACK INDONESIA ECO
+                        LEBAR 45 MM 2"
+                        PANJANG 100 YARD
+                        42 Micron
+                        KUALITAS BAGUS DAN TIDAK MUDAH PUTUS, COCOK UNTUK KEBUTUHAN PACKING KALIAN!</p>
+                    <div class="product-stars"></div>
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star" class="star"></i>
+                    <div class="product-price">Rp.3.900 - Rp.5.000</div>
+                    <a href="https://shopee.co.id/Lakban-Bening-Lakban-Cokelat-MPI-Ekomonis-45mm-x-100-Yard-i.261781936.14692872751"
+                        target="_blank"><i data-feather="shopping-cart"></i><span>add to cart</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="item-detail-modal">
+        <div class="modal-container">
+            <a href="#" class="close-icon"><i data-feather="x"></i></a>
+            <div class="modal-content">
+                <img src="img/product/eco.jpg" alt="">
+                <div class="product-content">
+                    <h3>LAKBAN MPI 100 YARD - BENING ECO</h3>
+                    <p>BRAND MASTER PACK INDONESIA ECO
+                        LEBAR 45 MM 2"
+                        PANJANG 100 YARD
+                        42 Micron
+                        KUALITAS BAGUS DAN TIDAK MUDAH PUTUS, COCOK UNTUK KEBUTUHAN PACKING KALIAN!</p>
+                    <div class="product-stars"></div>
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star" class="star"></i>
+                    <i data-feather="star" class="star"></i>
+                    <div class="product-price">Rp.3.900 - Rp.5.000</div>
+                    <a href="https://shopee.co.id/Lakban-Bening-Lakban-Cokelat-MPI-Ekomonis-45mm-x-100-Yard-i.261781936.14692872751"
+                        target="_blank"><i data-feather="shopping-cart"></i><span>add to cart</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal" id="item-detail-modal">
         <div class="modal-container">
             <a href="#" class="close-icon"><i data-feather="x"></i></a>

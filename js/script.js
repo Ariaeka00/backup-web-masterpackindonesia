@@ -55,27 +55,36 @@ document.addEventListener('click', (e) => {
 
 // modal detail
 const detail = document.querySelectorAll('.btn-detail')
-const modalDetail = document.getElementById('item-detail-modal')
+const modals = document.querySelectorAll('.modal')
 
 detail.forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-        modalDetail.style.display = 'flex'
+    btn.addEventListener('click', (e) => {
+        const modalNumber = btn.dataset.modal
+        const modalshow = modals[modalNumber - 1]
+        modalshow.style.display = 'flex'
         e.preventDefault()
     })
 })
 
 // close detail
-const close = document.querySelector('.close-icon')
-close.addEventListener('click', (e) => {
-    modalDetail.style.display = 'none'
-    e.preventDefault()
+modals.forEach((modal) => {
+    const close = modal.querySelector('.close-icon')
+    close.addEventListener('click', (e) => {
+        modal.style.display = 'none'
+        e.preventDefault()
+    })
 })
+// const close = document.querySelector('.close-icon')
+// close.addEventListener('click', (e) => {
+//     modalDetail.style.display = 'none'
+//     e.preventDefault()
+// })
 
 // klik diluar detail
-window.addEventListener('click', (e) => {
-    if(e.target == modalDetail) {
-        modalDetail.style.display = 'none'
-    }
-})
+// window.addEventListener('click', (e) => {
+//     if(e.target == modalDetail) {
+//         modalDetail.style.display = 'none'
+//     }
+// })
 
 

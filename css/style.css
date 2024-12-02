@@ -24,9 +24,9 @@ body {
 /* navbar */
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 1.4rem 7%;
+  padding: 1rem 2rem;
   background-color: transparent;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
   position: fixed;
@@ -88,17 +88,41 @@ body {
     -o-transform: scaleX(0.5);
 }
 
+.nav-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar-extra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .wrapping-search {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 30rem;
-    border: 1px solid red;
+    border: 1px solid #010101;
+    /* box-shadow: 1px 1px 5px rgba(0, 0, 0, .5); */
+    padding: 4px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 
 .wrapping-search input {
     width: 100%;
     background-color: transparent;
+}
+
+#shopping-cart {
+    margin-left: 1rem;
 }
 
 .navbar .navbar-extra a {
@@ -114,10 +138,35 @@ body {
     display: none;
 }
 
+.nav-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home {
+    display: flex;
+    /* color: red; */
+}
+
 .register {
     display: flex;
     margin-left: 2rem;
     gap: 1rem;
+}
+
+.sign-in,
+.sign-up {
+    border: 1px solid #010101;
+    padding: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: .9rem;
+}
+
+.sign-in:hover ,
+.sign-up{
+    /* background-color: #f51c1c; */
 }
 
 /* Navbar Search Form */
@@ -258,7 +307,7 @@ body {
 }
 
 /* nav menu */
-.nav-menu {
+/* .nav-menu {
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
@@ -289,7 +338,7 @@ body {
     font-size: .5rem;
     color: #333;
     font-style: italic;
-}
+} */
 
 .content-hero-large {
     display: grid;
@@ -303,8 +352,8 @@ body {
 
 .container-heading {
     grid-area: container-heading;
-    min-height: 20rem;
-    padding: 50px;
+    min-height: 24rem;
+    padding: 60px;
     background-image: url('../img/U\ Banner\ Bandung-01.jpg');
     background-repeat: no-repeat;
     background-size: cover;
