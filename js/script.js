@@ -37,6 +37,40 @@ document.addEventListener('scroll', (e) => {
     }
 })
 
+// slider
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.slide')
+    let currentSlide = 0;
+    const slideInterval = 7000;
+
+    function showslide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove('active', 'prev')
+            if(i === index) {
+                slide.classList.add('active')
+            } else if(i === (index - 1 + slides.length) % slide.length) {
+                slide.classList.add('prev')
+            }
+        })
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showslide(currentSlide)
+    }
+
+    // Set Background Images
+    slides.forEach(slide => {
+        const imgUrl = slide.getAttribute('data-image')
+        slide.style.backgroundImage = `url(${imgUrl})`
+    })
+
+    setInterval(nextSlide, slideInterval)
+
+    showslide(currentSlide)
+});
+
+
 // shopping cart
 const shoppingCartButton = document.getElementById('shopping-cart')
 const shoppingCart = document.querySelector('.shopping-cart')
@@ -74,17 +108,12 @@ modals.forEach((modal) => {
         e.preventDefault()
     })
 })
-// const close = document.querySelector('.close-icon')
-// close.addEventListener('click', (e) => {
-//     modalDetail.style.display = 'none'
-//     e.preventDefault()
-// })
 
 // klik diluar detail
-// window.addEventListener('click', (e) => {
-//     if(e.target == modalDetail) {
-//         modalDetail.style.display = 'none'
-//     }
-// })
+window.addEventListener('click', (e) => {
+    if(e.target == modals) {
+        modals.style.display = 'none'
+    }
+})
 
 
