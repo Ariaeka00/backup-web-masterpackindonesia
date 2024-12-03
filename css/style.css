@@ -302,7 +302,6 @@ body {
 .hero {
     display: grid;
     gap: 5px;
-    /* background-color: #000; */
     margin-top: 6rem;
 }
 
@@ -346,7 +345,7 @@ body {
         'container-heading container-heading feature-1'
         'container-heading container-heading feature-2';   
     padding: 0 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 
 }
 
@@ -465,11 +464,42 @@ body {
     -o-transition: transform 0.5s ease-in-out;
 }
 
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    /* background-color: #000; */
+    gap: 20px;
+    margin: 0 2rem 1rem 2rem;
+}
+
+.service {
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .3);
+}
+
+.icon {
+    font-size: 3em;
+}
+
+.service h3 {
+    font-size: 1.5em;
+}
+
+.service p {
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+}
+
 /* About Section */
 .about {
-    background-color: #1d2434;
-    position: relative;
-    z-index: 999999;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+    margin: 0 2rem 1rem 2rem;
 }
 
 .about, 
@@ -478,7 +508,7 @@ body {
 .product,
 .card{
     min-height: 100vh;
-    padding: 8rem 7% 1.4rem;
+    /* padding: 8rem 7% 1.4rem; */
 }
 
 .about h2 {
