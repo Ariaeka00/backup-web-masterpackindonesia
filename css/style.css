@@ -346,7 +346,7 @@ body {
         'container-heading container-heading feature-2';   
     padding: 0 2rem;
     padding-bottom: 1rem;
-
+    /* margin: 0 2rem; */
 }
 
 .container-heading {
@@ -369,6 +369,7 @@ body {
     height: 100%;
     background-size: cover;
     background-position: center;
+    /* object-fit: contain; */
     opacity: 0;
     transform: translateX(100%);
     -webkit-transform: translateX(100%);
